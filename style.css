@@ -1,0 +1,47 @@
+html,
+body {
+    background-color: #FFFCF7;
+    margin: 0px;
+    padding: 0px;
+}
+.centered_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px 16px 0px 16px;
+    border-radius: 8px;
+}
+
+.navbar {
+    width: 100vw;
+    background-color: #1A4866;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_button {
+    border: none;
+    background-color: transparent;
+    color: #FFFCF7;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.navbar_button:hover {
+    color: #23CFE0;
+    background-color: #374C74;
+}
+
+.project_moonlight_header {
+    color: black;
+    font-weight: 600;
+    font-size: 3em;
+}
