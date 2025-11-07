@@ -7,7 +7,7 @@ function FetchComponent(id, relativePath) {
             return response.text();
         })
         .then(html => {
-            const container = document.getElementById(id).innerHTML;
+            const container = document.getElementById(id);
             container.innerHTML = html;
 
             const tempDiv = document.createElement('div');
