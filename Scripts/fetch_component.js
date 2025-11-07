@@ -1,7 +1,9 @@
 function FetchComponent(id, absolutePath) {
+    path = '';
+
     if (typeof absolutePath === 'string' && absolutePath.match(/\.html?$/i)) {
         const normalized = absolutePath.replace(/^\/+|^\.+/, '');
-        const path = './' + normalized;
+        path = './' + normalized;
     } else {
         console.error("Invalid HTML file path:", absolutePath);
     }
