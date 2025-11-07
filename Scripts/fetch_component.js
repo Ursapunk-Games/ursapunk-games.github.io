@@ -1,5 +1,12 @@
-function FetchComponent(id, relativePath) {
-    fetch(relativePath)
+function FetchComponent(id, absolutePath) {
+    if (typeof absolutePath === 'string' && absolutePath.match(/\.html?$/i)) {
+        const normalized = absolutePath.replace(/^\/+|^\.+/, '');
+        const path = './' + normalized;
+    } else {
+        console.error("Invalid HTML file path:", absolutePath);
+    }
+
+    fetch(path)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Failed to load component ${response.status}`);
