@@ -8,6 +8,25 @@
     --darkbrown: #652b1b;
 }
 
+body{
+    background-color: var(--white);
+    max-width: 1200px; 
+}
+
+header{
+    background-color: var(--darkcyan);
+
+    img{
+        max-width: 100px;
+        width: 100%;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 
 
