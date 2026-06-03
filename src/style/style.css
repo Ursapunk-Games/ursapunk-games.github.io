@@ -1,0 +1,377 @@
+:root{
+    --aquablue: #0f8596;
+    --blue: #374c74;
+    --darkblue: #1a4866;
+    --brown: #652b1b;
+    --lightbrown: #b97e4a;
+    --white: #fffcf7;
+    
+}
+
+body, html{
+    margin: 0;
+    padding: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    background-color: var(--darkblue);
+
+    a{
+        align-content: center;
+    }
+}
+
+h1{
+        text-transform: uppercase;
+        width: 100%;
+    }
+
+    #logo-mainpart{
+
+    img{
+        padding: 1rem;
+    }
+
+    article{
+        padding: 2rem;
+
+        a{
+            background-color: var(--darkblue);
+            padding: 0.5rem;
+            border-radius: 50px;
+            border: 4px solid var(--white);
+            font-size: larger;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+    }
+   
+}
+
+#aboutgameStyle{
+    background-color: var(--white);
+    color: black;
+
+    h3{
+        color: var(--lightbrown);
+        font-size: 2rem;
+        margin: 0;
+        
+    }
+    
+}
+
+footer{
+    background-color: var(--darkblue);
+    padding: 2rem;
+    color: var(--white);
+
+    p{
+        font-size: small;
+    }
+
+    ul{
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        font-size: x-large;
+
+        a{
+            color: var(--white);
+        }
+    }
+}
+
+.profile-card{
+    
+    color: var(--white);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+
+    h3{
+        text-transform: capitalize;
+        
+    }
+
+    img{
+    
+        border-radius: 50%;
+        border: var(--lightbrown) 10px solid;
+    }
+}
+
+#profile-page{
+    background-color: var(--blue);
+}
+
+
+
+/* mobil */
+
+@media only screen and (max-width:800px){
+
+    /* MAINPAGE */
+
+    .header{
+        height: auto;
+        display: flex;
+
+       img{
+        display: flex;
+        justify-content: left;
+        width: 100px;
+        }
+
+        ul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-right: 1rem;
+        }
+    }
+
+    .header-nav{
+    
+        display: none;
+    }
+
+    .header-nav.is-open{
+        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+
+        a{
+            color: var(--white);
+            text-decoration: none;
+            padding-top: 1rem;
+            font-size: 2rem;
+
+        }
+    }
+
+    .header-nav-trigger{
+        display: block;
+        color: var(--white);
+        display: flex;
+        justify-content: end;
+
+
+        svg{
+            height: 30px;
+        }
+    
+    }
+
+    #logo-mainpart{
+        background-image: url("../placeholder/PageBackground.png");
+        height: auto;
+        background-size: cover;
+        background-attachment: fixed;
+
+        img{
+            width: 80%;
+        }
+
+        article{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            a{
+                margin: 1rem;
+                padding: 1rem;
+                width: 175px;
+            }
+        }
+    }
+
+    #aboutgameStyle{
+        article{
+            display: flex;
+
+            p{
+                width: 60%;
+                text-align: left;
+                padding: 1rem;
+                padding-right: 0;
+                font-size: small;
+            }
+
+            img{
+                max-width: 150px;
+                max-height: 200px;
+            }
+        }
+
+        h3{
+            width: 100%;
+            text-align: left;
+            padding: 1rem;
+            padding-bottom: 0;
+            padding-top: 1rem;
+        }
+    }
+
+    #screenshotsStyle{
+        display: flex;
+        flex-direction: column;
+        img{
+            height: auto;
+            width: 100%;
+        }
+
+    }
+
+    .profile-card{
+        img{
+             width: 200px;
+            height: 200px;
+        }
+    }
+
+    footer{
+    
+    
+    img{
+        width: 40%;
+    }
+}
+
+
+/* ABOUTUS */
+
+#profile-page{
+      display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    .profile-card{
+        padding: 1rem;
+    }
+}
+    
+}
+
+/* pc */
+
+@media only screen and (min-width:800px){
+    
+.header{
+        height: 70px;
+        display: flex;
+
+       img{
+        display: flex;
+        justify-content: left;
+        width: 150px;
+        padding-left: 2rem;
+        }
+    }
+
+    .header-nav-trigger{
+        display: none;
+    }
+
+    ul{
+        width: 100%;
+    }
+
+    .header-nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: right;
+    padding-right: 1rem;
+    a{
+        text-decoration: none;
+        color: var(--white);
+        text-transform: uppercase;
+    }
+}
+
+#logo-mainpart{
+        background-image: url("../placeholder/PageBackground.png");
+        background-size: cover;
+        background-attachment: fixed;
+
+        img{
+            width: 50%;
+        }
+
+        article{
+
+             a{
+                padding: 1rem;
+            margin: 1rem;
+            font-size: large;
+            
+            }
+        }
+
+       
+}
+
+#aboutgameStyle{
+    display: flex;
+
+    h3{
+        align-content: center;
+        width: 40%;
+    }
+
+    article{
+        display: flex;
+        flex-direction: flex;
+        align-items: center;
+        text-align: left;
+
+        p{
+            padding-right: 10rem;
+            font-size: smaller;
+        }
+
+        img{
+            max-width: 200px;
+        }
+    }
+}
+
+#screenshotsStyle{
+    background-color: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        width: 33%;
+    }
+}
+
+#profile-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+.profile-card{
+    margin: 1rem;
+
+    img{
+         width: 225px;
+        height: 225px;
+    }
+}
+
+footer{
+    img{
+        width: 10%;
+    }
+}
+
+}
+
