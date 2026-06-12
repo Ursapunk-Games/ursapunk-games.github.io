@@ -1,4 +1,4 @@
-import Header from "./header"
+import Header from "./Header"
 import Mainpage from "../pages/Mainpage"
 import Footer from "./Footer"
 import { Link } from "react-router-dom"
