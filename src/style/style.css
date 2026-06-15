@@ -25,9 +25,10 @@ body, html{
 h1{
         text-transform: uppercase;
         width: 100%;
-    }
+        color: var(--white)
+}
 
-    #logo-mainpart{
+#logo-mainpart{
 
     img{
         padding: 1rem;
