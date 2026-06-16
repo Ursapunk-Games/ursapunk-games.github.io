@@ -79,10 +79,10 @@ footer{
         gap: 1rem;
         justify-content: center;
         font-size: x-large;
+    }
 
-        a{
-            color: var(--white);
-        }
+    a {
+        color: var(--white);
     }
 }
 
