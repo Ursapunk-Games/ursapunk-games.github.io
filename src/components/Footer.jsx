@@ -1,4 +1,4 @@
-import { faSteam, faSquareInstagram, faYoutube, faTiktok, faDiscord} from '@fortawesome/free-brands-svg-icons';
+import { faSquareInstagram, faYoutube, faTiktok, faDiscord} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Footer(){
@@ -10,10 +10,10 @@ export default function Footer(){
                 Contact us! <a href='mailto:ursapunkgames@gmail.com'>ursapunkgames@gmail.com</a>
             </p>
             <ul>
-                <a href='https://www.instagram.com/ursapunk_games/'><FontAwesomeIcon icon={faSquareInstagram} /></a>
-                <a href='https://www.youtube.com/@UrsapunkGames'><FontAwesomeIcon icon={faYoutube} /></a>
-                <a href='https://www.tiktok.com/@ursapunkgames'><FontAwesomeIcon icon={faTiktok} /></a>
-                <a href='https://discord.gg/Anncg8ASWb'><FontAwesomeIcon icon={faDiscord} /></a>
+                <a href='https://www.instagram.com/ursapunk_games/' target='blank'><FontAwesomeIcon icon={faSquareInstagram} /></a>
+                <a href='https://www.youtube.com/@UrsapunkGames' target='blank'><FontAwesomeIcon icon={faYoutube} /></a>
+                <a href='https://www.tiktok.com/@ursapunkgames' target='blank'><FontAwesomeIcon icon={faTiktok} /></a>
+                <a href='https://discord.gg/Anncg8ASWb' target='blank'><FontAwesomeIcon icon={faDiscord} /></a>
             </ul>
             
         </footer>
